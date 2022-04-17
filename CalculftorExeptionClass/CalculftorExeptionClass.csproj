@@ -48,7 +48,6 @@
     <Compile Include="Error05.cs" />
     <Compile Include="Error06.cs" />
     <Compile Include="Error07.cs" />
-    <Compile Include="Error08.cs" />
     <Compile Include="Error09.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
