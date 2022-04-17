@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnalaizerClass\AnalaizerClass.csproj">
+      <Project>{D936A458-4558-46CB-BE73-D76C6AEA2D0D}</Project>
+      <Name>AnalaizerClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalculftorExeptionClass\CalculftorExeptionClass.csproj">
+      <Project>{AAAFB34E-72F6-4A96-9261-199DFA26B051}</Project>
+      <Name>CalculftorExeptionClass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

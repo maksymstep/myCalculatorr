@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AnalaizerClass;
+using CalculftorExeptionClass;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -176,7 +178,49 @@ namespace myCalculatorr
 
         private void button20_Click(object sender, EventArgs e)
         {
-
+            if (textBox1.Text.Length == 0)
+                return;
+            try
+            {
+                if (textBox1.Text.Length > 30)
+                    throw new Error07();
+                Analizer.EX = textBox1.Text;
+                textBox2.Text = Analizer.GetRes();
+            }
+            catch (Error06 ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (Error03 ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (Error05 ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (Error02 ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (Error04 ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (OverflowException ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (DivideByZeroException ex)
+            {
+                textBox2.Text = ex.Message;
+            }
+            catch (Exception ex)
+            {
+                textBox2.Text = ex.Message;
+            }
         }
+
+       
     }
 }
