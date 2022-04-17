@@ -173,5 +173,10 @@ namespace myCalculatorr
             textBox1.Text += button21.Text;
             textBox1.Focus();
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
